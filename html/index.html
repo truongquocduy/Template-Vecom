@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap-5.0.2/js/bootstrap.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <script src="../lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="wrapper p-2 ps-4 pe-4">
+                <div class="list-social text-light">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook me-2"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter me-2"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-google me-2"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest me-2"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-invision me-2"></i>
+                    </a>
+                </div>
+                <button class="btn btn-carts text-light"><i class="fa-solid fa-user me-2" style="color: #b06792;"></i>LOGIN</button>
+                <button class="btn btn-carts text-light"><i class="fa-solid fa-cart-shopping me-2" style="color: #1abc9c;"></i>MY CART</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10 p-3" style="display: flex;">
+                <div id="logo">
+                    <img src="../images/logo.png" alt="" width="200px">
+                </div>
+                <div class="menu-primary ms-5">
+                    <ul>
+                        <li id="btn-menu-responsive">
+                            <i class="fa-solid fa-bars" style="font-size: 30px;"></i>
+                        </li>
+                        <li class="mb-5 text-light" id="btn-menu-responsive-close">
+                            <i class="fa-solid fa-xmark" style="font-size: 40px;float: right;"></i>
+                        </li>
+                        <li>
+                            <a href="#">Xu hướng</a>
+                        </li>
+                        <li>
+                            <a href="#">Giảm giá</a>
+                        </li>
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="#">Chúng tôi</a>
+                        </li>
+                        <li>
+                            <form action="#">
+                                <input type="text" class="form-control" placeholder="Từ khóa tìm kiếm . . .">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-responsive-area">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 p-0">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="../images/banner1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../images/banner2.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="../images/banner3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/responsive.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots: false,
+        pagination: false,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+});
+</script>
+</html>
