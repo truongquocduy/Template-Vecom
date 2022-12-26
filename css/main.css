@@ -4,6 +4,7 @@
 :root{
     --background-1: #2c3e50;
     --background-2: #1abc9c;
+    --background-footer: #1a1c27;
 }
 .wrapper{
     background-color: var(--background-1);
@@ -264,4 +265,45 @@
     to {
         transform: translateX(-30px);
     }
+}
+.footer{
+    background-color: var(--background-footer);
+}
+.footer-row-1 p{
+    font-size: 14px;
+}
+.footer-row-2 {
+    font-size: 11px;
+}
+.footer-row-2 h4{
+    font-weight: 1000;
+}
+.footer-row-2 a{
+    color: inherit;
+}
+.footer-row-4 p{
+    font-size: 14px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eceef0;
+}
+.footer-card-mini{
+    display: flex;
+    text-decoration: none;
+    color: initial;
+    border-bottom: 1px solid #eceef0;
+}
+.footer-card-mini-content h5 {
+    font-weight: 1000;
+}
+.copyring{
+    background-color: black;
+}
+.list-social-copyring{
+    font-size: 18px;
+    padding: 6px;
+}
+    
+.list-social-copyring a{
+    text-decoration: none;
+    color: inherit;
 }
