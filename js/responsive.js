@@ -30,3 +30,27 @@ $("#btn-menu-responsive, #btn-menu-responsive-close").on('click', function(){
         })
     }
 });
+
+// console.log($(".wrapper").outerHeight())
+var lastScrollTop = 0;
+$(window).on('scroll', function(){
+    if($(window).scrollTop() >= $(".wrapper").height()){
+        $("#navb").css("position","fixed")
+        $("#navb").css("top","0")
+        $("#navb").css("border-bottom","1px solid #eceef0")
+    }
+    else{
+        $("#navb").css("position","unset")
+    }
+    var st = $(this).scrollTop();
+    if (st < lastScrollTop){
+        $(".wrapper").css("position","fixed")
+        $(".wrapper").css("z-index","100")
+        $("#navb").css("top",$(".wrapper").outerHeight())
+    }
+    if($(window).scrollTop() < $(".wrapper").outerHeight()){
+        $(".wrapper").css("position","unset")
+
+    }
+    lastScrollTop = st;
+});
