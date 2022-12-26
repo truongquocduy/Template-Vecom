@@ -16,3 +16,6 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+$(".search-span").on('click', function() {
+    $(this).closest('form').submit();
+});

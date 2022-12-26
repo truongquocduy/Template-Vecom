@@ -54,3 +54,16 @@ $(window).on('scroll', function(){
     }
     lastScrollTop = st;
 });
+
+$(".list-category-product li").on('click', function(event){
+    if($(event.target).closest('li').next().hasClass( "list-category-down" )) {
+        if($(event.target).next().css("display") !="block") {
+            $(".list-category-down").css("display","none")
+            $(event.target).next().css("display","block")
+        }
+        else{
+            $(event.target).next().css("display","none")
+        }
+    }
+});
+

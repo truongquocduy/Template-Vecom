@@ -5,6 +5,7 @@
     --background-1: #2c3e50;
     --background-2: #1abc9c;
     --background-footer: #1a1c27;
+    --color-border-1: #eceef0; 
 }
 .wrapper{
     background-color: var(--background-1);
@@ -49,7 +50,7 @@
     display: none;
 }
 #btn-menu-responsive{
-    margin-left: 80px !important;
+    margin-left: 70px !important;
     display: none;
 }
 #menu-responsive-area{
@@ -286,6 +287,9 @@
     padding-bottom: 30px;
     border-bottom: 1px solid #eceef0;
 }
+.footer-row-4 p:last-child{
+    border-bottom: unset !important;
+}
 .footer-card-mini{
     display: flex;
     text-decoration: none;
@@ -306,4 +310,82 @@
 .list-social-copyring a{
     text-decoration: none;
     color: inherit;
+}
+
+/* product page */
+.search-span{
+    background-color: unset !important;
+    color: var(--background-1);
+    cursor: pointer;
+}
+.search-span:hover{
+    color: var(--background-2);
+}
+.title-category{
+    font-weight: 1000;
+}
+.title-category span{
+    width: 20px;
+    height: 20px;
+    background-color: var(--background-2);
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    font-weight: 1000;
+}
+.list-category-product{
+    list-style: none;
+    padding: 0;
+}
+.list-category-product li{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    border-bottom: 1px solid var(--color-border-1);
+    padding: 8px 0;
+    cursor: pointer;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.list-category-product li .button-down{
+    color: gray;
+    float: right;
+    margin-right: 16px;
+}
+.list-category-product li:hover, .list-category-product li a:hover{
+    color: var(--background-2);
+}
+.list-category-down{
+    padding: 10px !important;
+    display: none;
+    transition: height linear .3s;
+    color: white;
+}
+.list-category-down a{
+    font-size: 16px;
+    text-decoration: none;
+    color: initial;
+    margin: 10px;
+    display: list-item;
+}
+.filter-bar{
+    display: flex;
+}
+.select-product-filter{ 
+    max-width: 200px;
+}
+@media only screen and (max-width: 600px) {
+    /* .filter-bar{
+        display: block;
+    } */
+    .select-product-filter{ 
+        max-width: 200px !important;
+    }
+    .filter-bar button{
+        margin-top: 8px;
+    }
 }
