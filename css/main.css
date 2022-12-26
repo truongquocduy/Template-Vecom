@@ -153,6 +153,11 @@
 .product-title,.product-price{
     font-weight: 1000;
 }
+.product-price strike{
+    font-size: 16px;
+    margin-right: 10px;
+    color: var(--background-1);
+}
 .product-rating{
     color: goldenrod;
 }
@@ -238,4 +243,25 @@
 .blog-card-content span{
     cursor: pointer;
     color: var(--background-2);
+}
+.product-card-mini{
+    display: flex;
+    text-decoration: none;
+    color: initial;
+    border: 1px solid #eceef0;
+}
+.product-card-mini-content h5 {
+    font-weight: 1000;
+}
+.product-card-mini:hover{
+    animation: product-card-mini linear 0.3s forwards alternate;
+    cursor: pointer;
+}
+@keyframes product-card-mini {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-30px);
+    }
 }
