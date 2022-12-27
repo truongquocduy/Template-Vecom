@@ -6,6 +6,7 @@
     --background-2: #1abc9c;
     --background-footer: #1a1c27;
     --color-border-1: #eceef0; 
+    --background-shop: #f1f6fa;
 }
 .wrapper{
     background-color: var(--background-1);
@@ -388,4 +389,61 @@
     .filter-bar button{
         margin-top: 8px;
     }
+}
+
+/* Detail */
+.background-detail{
+    background-color: var(--background-shop);
+
+}
+.background-detail .len-detail{
+    text-decoration: none;
+    color: initial;
+}
+.product-detail-social{
+    width: 6%;
+    float: left;
+}
+.product-detail-social span{
+    width: 100% !important;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    background-color: #ECF0F1;
+    color: #a1b1bc;
+    padding-top: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+.product-detail-social .s-facebook:hover{
+    color: white;
+    background-color: #3c5a9a;
+}
+.product-detail-social .s-twitter:hover{
+    color: white;
+    background-color: #41d1da;
+}
+.product-detail-social .s-google:hover{
+    color: white;
+    background-color: #333230;
+}
+.product-detail-social .s-pinterest:hover{
+    color: white;
+    background-color: tomato;
+}
+.product-detail-social .s-invision:hover{
+    color: white;
+    background-color: teal;
+}
+.carousel-area{
+    float: left;
+    margin-left: 10px;
+    height: 500px;
+    width: 100px;
+}
+.product-image-primary{
+    float: left;
+    width: inherit;
 }
