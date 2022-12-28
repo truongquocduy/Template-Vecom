@@ -1,4 +1,4 @@
-$('.owl-carousel').owlCarousel({
+$('.owl-carousel-banner').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
@@ -16,6 +16,25 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+$('.owl-carousel-detail').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:false,
+    margin:10,
+    dots:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
 $(".search-span").on('click', function() {
     $(this).closest('form').submit();
 });
